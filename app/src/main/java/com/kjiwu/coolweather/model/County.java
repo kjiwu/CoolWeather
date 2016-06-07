@@ -1,7 +1,7 @@
 package com.kjiwu.coolweather.model;
 
 /**
- * Created by wulei on 16/6/7.
+ * Created by kjiwu on 16/6/7.
  */
 public class County {
 

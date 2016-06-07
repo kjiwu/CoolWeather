@@ -4,7 +4,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
 /**
- * Created by wulei on 16/6/7.
+ * Created by kjiwu on 16/6/7.
  */
 public class CoolWeatherDB {
 
