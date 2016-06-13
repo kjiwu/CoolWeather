@@ -88,15 +88,17 @@ public class CoolWeatherDB {
                 new String[] { String.valueOf(provinceId) }, null, null, null);
 
         if(cursor.moveToFirst()) {
-            City city = new City();
-            city.setId(cursor.getInt(cursor.getColumnIndex(CoolWeatherOpenHelper.IdColumnName)));
-            city.setCityName(cursor.getString(cursor.getColumnIndex(CoolWeatherOpenHelper
-                    .CityNameColumnName)));
-            city.setCityCode(cursor.getString(cursor.getColumnIndex(CoolWeatherOpenHelper
-                    .CityCodeColumnName)));
-            city.setProvinceId(cursor.getInt(cursor.getColumnIndex(CoolWeatherOpenHelper
-                    .ProvinceIdColumnName)));
-            cities.add(city);
+            do {
+                City city = new City();
+                city.setId(cursor.getInt(cursor.getColumnIndex(CoolWeatherOpenHelper.IdColumnName)));
+                city.setCityName(cursor.getString(cursor.getColumnIndex(CoolWeatherOpenHelper
+                        .CityNameColumnName)));
+                city.setCityCode(cursor.getString(cursor.getColumnIndex(CoolWeatherOpenHelper
+                        .CityCodeColumnName)));
+                city.setProvinceId(cursor.getInt(cursor.getColumnIndex(CoolWeatherOpenHelper
+                        .ProvinceIdColumnName)));
+                cities.add(city);
+            } while (cursor.moveToNext());
         }
 
         return cities;
@@ -121,15 +123,17 @@ public class CoolWeatherDB {
                 new String[] { String.valueOf(cityId) }, null, null, null);
 
         if(cursor.moveToFirst()) {
-            County county = new County();
-            county.setId(cursor.getInt(cursor.getColumnIndex(CoolWeatherOpenHelper.IdColumnName)));
-            county.setCountyName(cursor.getString(cursor.getColumnIndex(CoolWeatherOpenHelper
-                    .CountyNameColumnName)));
-            county.setCountyCode(cursor.getString(cursor.getColumnIndex(CoolWeatherOpenHelper
-                    .CountyCodeColumnName)));
-            county.setCityId(cursor.getInt(cursor.getColumnIndex(CoolWeatherOpenHelper
-                    .CityIdColumnName)));
-            counties.add(county);
+            do {
+                County county = new County();
+                county.setId(cursor.getInt(cursor.getColumnIndex(CoolWeatherOpenHelper.IdColumnName)));
+                county.setCountyName(cursor.getString(cursor.getColumnIndex(CoolWeatherOpenHelper
+                        .CountyNameColumnName)));
+                county.setCountyCode(cursor.getString(cursor.getColumnIndex(CoolWeatherOpenHelper
+                        .CountyCodeColumnName)));
+                county.setCityId(cursor.getInt(cursor.getColumnIndex(CoolWeatherOpenHelper
+                        .CityIdColumnName)));
+                counties.add(county);
+            } while (cursor.moveToNext());
         }
 
         return counties;
