@@ -5,6 +5,7 @@ package com.kjiwu.coolweather.model;
  */
 public class Province {
 
+
     private String provinceName;
     private int id;
     private String provinceCode;

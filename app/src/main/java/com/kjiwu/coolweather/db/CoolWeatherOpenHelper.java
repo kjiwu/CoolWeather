@@ -9,6 +9,23 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 public class CoolWeatherOpenHelper extends SQLiteOpenHelper {
 
+    public static final String IdColumnName = "id";
+
+    public static final String ProvinceTableName = "Province";
+    public static final String ProvinceNameColumnName = "province_name";
+    public static final String ProvinceCodeColumnName = "province_code";
+
+    public static final String CityTableName = "City";
+    public static final String CityNameColumnName = "city_name";
+    public static final String CityCodeColumnName = "city_code";
+    public static final String ProvinceIdColumnName = "province_id";
+
+    public static final String CountyTableName = "County";
+    public static final String CountyNameColumnName = "county_name";
+    public static final String CountyCodeColumnName = "county_code";
+    public static final String CityIdColumnName = "city_id";
+
+
     public static final String CREATE_PROVINCE = "create table Province ("
             + "id integer primary key autoincrement, "
             + "province_name text, "
