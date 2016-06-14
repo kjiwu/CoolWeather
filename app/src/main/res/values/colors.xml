@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="chooseAreaBackgroundColor">#484E61</color>
-    <color name="chooseAreaTitleForegroundColor">#FFFFFF</color>
+    <color name="titleBackgroundColor">#484E61</color>
+    <color name="titleForegroundColor">#FFFFFF</color>
+
+    <color name="weatherContentBackgroundColor">#27A5F9</color>
 </resources>

@@ -7,14 +7,14 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/chooseAreaBackgroundColor">
+        android:background="@color/titleBackgroundColor">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/title_text"
             android:layout_centerInParent="true"
-            android:textColor="@color/chooseAreaTitleForegroundColor"
+            android:textColor="@color/titleForegroundColor"
             android:textSize="24sp"/>
 
     </RelativeLayout>
